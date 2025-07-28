@@ -453,9 +453,24 @@ nav a:hover {
     .hero-text h2 { font-size: 24px; }
     .hero-text p { font-size: 16px; }
     .hero-image { width: 300px; }
-    .eu { width: 300px;}
-    .texto-contratar h1 { font-size: 32px; }
-    .texto-contratar p { font-size: 16px; }
 
+    .contratar {
+        flex-direction: column; /* empilha os elementos */
+        align-items: center;    /* centraliza horizontalmente */
+        padding: 3rem 2rem;     /* reduz o espaçamento lateral */
+        text-align: center;     /* centraliza textos */
+    }
+
+       .eu {
+        width: 200px; /* opcional, menor largura para caber bem */
+        margin-bottom: 1.5rem;
+    }
+        .texto-contratar h1 {
+        font-size: 32px;
+    }
+
+    .texto-contratar p {
+        font-size: 16px;
+    }
 }
 
