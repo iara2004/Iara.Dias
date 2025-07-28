@@ -1,0 +1,127 @@
+<html>
+<head>
+    <title>Site Pessoal</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>    
+<body>
+    <header id="header">
+        <div class="logo">Iara</div>
+            <nav>
+                <a href="index.html"> Ínicio </a>
+                <a href="#projetos"> Projetos </a>
+                <a href="#"> Experiencia </a>
+                <a href="Educacao.html"> Educação </a>
+                <a href="https://wa.me/351937375583?text=Olá%20Iara,%20gostava%20de%20falar%20contigo%20sobre%20uma%20oportunidade." class="contact-btn">Contacto</a>
+            </nav>
+            <div class="hamburger" onClick="toggleMobileNav()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <a href="index.html"> Ínicio </a>
+        <a href="#projetos"> Projetos </a>
+        <a href="#"> Experiencia </a>
+        <a href="Educacao.html"> Educação </a>
+        <a href="#"> Contacto </a>
+    </div>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Olá, Sou a <span>Iara</span></h1>
+            <h2>Desenvolvedor Web e Game Developer</h2>
+            <p>Profissional formada em Gestão e Programação de Sistemas Informáticos, com forte interesse em iniciar carreira na área tecnológica. Experiência comprovada em ambientes dinâmicos, com capacidade de liderança, organização e trabalho em equipa. Ao longo do percurso académico, realizou estágios técnicos em escolas e empresas, desenvolvendo competências em linguagens como Python, C#, C++, JavaScript, SQL, CSS, HTML. Atualmente, trabalha como treinadora no McDonald's, sendo responsável por formar novos colaboradores e apoiar a gestão de turnos. Procura uma oportunidade para aplicar e expandir os seus conhecimentos na área de Tecnologias.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/yara_dyas_2870/"> <i class='bx bxl-instagram'></i> </a>
+                <a href="tel:+351937375583"> <i class='bx bx-phone-call'></i> </a>
+                <a href="#"> <i class='bx bx-envelope' ></i> </a>
+            </div>
+            <div class="buttons">
+                <a href="#"> Sobre este Site</a>
+                <a href="CV/CV Iara Dias.pdf" download> Download o meu CV</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="img/yara.png" alt="Iara" class="hero-image">
+        </div>
+    </section>
+
+    <section class="Contratar">
+        <img src="img/Image1.jpg" class="eu">
+        <div class="texto-contratar">
+            <h1>Porque deveria me contratar?</h1>
+            <p class="razao">Sou uma jovem determinada, comunicativa e com grande capacidade de adaptação, que alia o gosto pela tecnologia à vontade constante de aprender e evoluir. Durante o meu percurso académico no curso de Gestão e Programação de Sistemas Informáticos, desenvolvi vários projetos práticos como o meu próprio jogo de sobrevivência em Unity 3D que demonstram os meus conhecimentos técnicos, criatividade e dedicação. Fui também trabalhadora-estudante, o que me ensinou a gerir bem o tempo, lidar com a pressão e manter o foco nos meus objetivos.
+
+Este site que apresento é também uma prova do meu empenho, sendo inteiramente desenvolvido por mim como uma forma de mostrar as minhas competências, desde o design até à programação, bem como a minha identidade enquanto futura profissional. Acredito que posso ser uma mais-valia para qualquer equipa, trazendo não só capacidades técnicas, mas também entusiasmo, proatividade e vontade de crescer dentro da empresa.</p>
+        </div>
+</section>
+    
+
+   <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo"> Meus Projetos </h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <a href="PapProgeto.html"><img src="img/3DDD.png" class="projetos-imagem"></a>
+                <div class="caixa-texto-projetos">
+                <h3 class="info-projetos"> Jogo Forest Survival</h3>
+                <p class="paragrafo-projetos"> Jogo 3D de sobrevivencia<br>(ainda em desenvolvimento)</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <a href="https://iara2004.github.io/Nana-s-Biju/"><img src="img/Nana's.png" class="projetos-imagem"></a>
+                <div class="caixa-texto-projetos">
+                <h3 class="info-projetos"> WebSite de Bijuteria</h3>
+                <p class="paragrafo-projetos"> Website para vendas de bijuterias<br>(ainda em desenvolvimento)</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <a href="https://iara2004.github.io/PetShop/"><img src="img/logotipo333.png" class="projetos-imagem"></a>
+                <div class="caixa-texto-projetos">
+                <h3 class="info-projetos"> WebSite loja de tosquias</h3>
+                <p class="paragrafo-projetos"> WebSite para Loja de Tosquias<br>(Website feito para teste escolar, nao foi terminado)</p>
+                </div>
+            </div>
+
+        </div>
+</section>
+
+
+    <script>
+    function toggleMobileNav(){
+        const hamburger = document.querySelector('.hamburger');
+        const mobileNav = document.getElementById('mobileNav');
+
+        hamburger.classList.toggle('active');
+        mobileNav.classList.toggle('active');
+
+        if(mobileNav.classList.contains('active')){
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    }
+
+    document.addEventListener('click', function(event){
+        const mobileNav = document.getElementById('mobileNav');
+        const hamburger = document.querySelector('.hamburger');
+
+        if(mobileNav.classList.contains('active')){
+            if(!mobileNav.contains(event.target) && !hamburger.contains(event.target)){
+                toggleMobileNav();
+            }
+        }      
+    });
+</script>
+
+
+
+
+
+</body>
+</html>
