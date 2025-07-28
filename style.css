@@ -287,6 +287,7 @@ nav a:hover {
 
 
 .contratar {
+    margin: auto;
     padding: 8rem 10rem;
     display: flex;
     align-items: center;
@@ -315,7 +316,7 @@ nav a:hover {
     margin-bottom: 25px;
     font-size: 48px;
     color: rgb(246, 164, 137);
-    text-align: left;
+    text-align: center;
 }
 
 .texto-contratar p {
@@ -452,5 +453,9 @@ nav a:hover {
     .hero-text h2 { font-size: 24px; }
     .hero-text p { font-size: 16px; }
     .hero-image { width: 300px; }
+    .eu { width: 300px;}
+    .texto-contratar h1 { font-size: 32px; }
+    .texto-contratar p { font-size: 16px; }
+
 }
 
