@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+    --bg-light:rgba(225, 255, 227, 0.645);         /* Fundo claro */
+    --primary: rgb(89, 163, 94);         /* Rosa pêssego pastel */
+    --accent: rgba(225, 255, 227, 0.645);           /* Tom rosado suave para detalhes */
+    --text-main: #201f1f;         /* Texto principal escuro */
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--bg-light);
+    color: var(--text-main);
+    overflow-x: hidden;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgba(187, 246, 191, 0.645); 
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    padding: 15px 5%;
+    background: rgba(255, 255, 255, 0.486);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 50%;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: rotate(15deg) scale(1.1);
+    box-shadow: 0 0 15px var(--shadow-primary);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+.contact-btn {
+    background: var(--primary);
+    padding: 12px 25px;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contact-btn:hover {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px var(--shadow-primary);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1001;
+    padding: 10px;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: var(--text-main);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.09);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: 100vh;
+    padding: 100px 30px;
+    text-align: right;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    transition: right 0.5s ease;
+}
+
+.mobile-nav.active {
+    right: 0;
+}
+
+.mobile-nav a {
+    padding: 15px 0;
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav a:hover {
+    color: var(--primary);
+    transform: translateX(-10px);
+}
+
+
+
+
+
+
+
+
+.Escola-Certificados{
+    min-height: 80vh;
+    flex-wrap: wrap;
+    padding: 200px 5% 50px;
+    position: relative;
+}
+
+.Descricao h1{
+    margin-bottom: 25px;
+    font-size: 48px;
+    color: rgb(89, 163, 94);
+    text-align: center;
+}
+
+.Descricao p{
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.certificados{
+    margin-top: 100px;
+    font-size: 25px;
+    color:rgb(89, 163, 94);
+    text-align: center;
+}
+
+.certificado-item {
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.certificado-item img {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+
+}
+
+.certificados-content {
+    flex: 1;
+}
+
+.certificados-content h2 {
+    font-size: 25px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.certificados-content p {
+    font-size: 20px;
+    color: #444;
+    text-align: left;
+}
+
