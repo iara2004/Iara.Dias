@@ -9,10 +9,8 @@ html {
 }
 
 :root {
-    --bg-light:rgba(225, 255, 227, 0.645);         /* Fundo claro */
-    --primary: rgb(89, 163, 94);         /* Rosa pêssego pastel */
-    --accent: rgba(225, 255, 227, 0.645);           /* Tom rosado suave para detalhes */
-    --text-main: #201f1f;         /* Texto principal escuro */
+    --bg-light: #c8faff89;         
+    --primary:#9dd5f1;                    
 }
 
 body {
@@ -34,14 +32,14 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: rgba(187, 246, 191, 0.645); 
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
 }
 
 header.scrolled {
     padding: 15px 5%;
-    background: rgba(255, 255, 255, 0.486);
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .logo {
@@ -160,69 +158,147 @@ nav a:hover {
 
 
 
+section{
+    min-height: 100vh;
+}
+
+.home{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+
+}
+
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.home .home-content p{
+
+    font-size: 25;
+    text-align: left;
+    margin-right: 110px;
+
+}
 
 
-
-
-
-.Escola-Certificados{
-    min-height: 80vh;
-    flex-wrap: wrap;
-    padding: 200px 5% 50px;
+.home-img img{
     position: relative;
-}
-
-.Descricao h1{
-    margin-bottom: 25px;
-    font-size: 48px;
-    color: rgb(89, 163, 94);
-    text-align: center;
-}
-
-.Descricao p{
-    text-align: center;
-    font-size: 25px;
-}
-
-
-.certificados{
+    width: 20vw;
+    margin-left: 100px;
     margin-top: 100px;
-    font-size: 25px;
-    color:rgb(89, 163, 94);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.body-page{
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+
+.body-page .body-content h1{
+    margin-top: 10%;
+    font-size: 5rem;
+    font-weight: 700;
     text-align: center;
 }
 
-.certificado-item {
+.body-page .body-content h2{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(165, 225, 249)
+}
+
+.body-page .body-content p{
+    margin-top: 40px;
+    font-size: 25;
+    text-align: left;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
+
+
+
+.linguagens {
     display: flex;
-    gap: 30px;
-    padding: 50px;
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-.certificado-item img {
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-
+.linguagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.certificados-content {
-    flex: 1;
-}
-
-.certificados-content h2 {
-    font-size: 25px;
-    color: #333;
+.linguagem img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.linguagem img:hover {
+    transform: scale(1.1);
+}
+
+
+h2 {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.Desenvolvimento h1{
+    margin-top: 40px;
+    text-align: left;
+    font-size: 50px;
+}
+
+
+.Desenvolvimento p{
+    font-size: 25px;
     text-align: left;
 }
 
-.certificados-content p {
-    font-size: 20px;
-    color: #444;
-    text-align: left;
+.nutsimg{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px; /* opcional */
+  margin-bottom: 80px;
+}
+
 
 
 
@@ -281,4 +357,3 @@ nav a:hover {
     .hero-text p { font-size: 16px; }
     .hero-image { width: 300px; }
 }
-

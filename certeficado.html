@@ -8,7 +8,7 @@
         <div class="logo">Iara</div>
             <nav>
                 <a href="index.html"> Ínicio </a>
-                <a href="#projetos"> Projetos </a>
+                <a href="Projetos.html"> Projetos </a>
                 <a href="#"> Experiencia </a>
                 <a href="Educacao.html"> Educação </a>
                 <a href="https://wa.me/351937375583?text=Olá%20Iara,%20gostava%20de%20falar%20contigo%20sobre%20uma%20oportunidade." class="contact-btn">Contacto</a>
@@ -22,7 +22,7 @@
 
     <div class="mobile-nav" id="mobileNav">
         <a href="index.html"> Ínicio </a>
-        <a href="#projetos"> Projetos </a>
+        <a href="Projetos.html"> Projetos </a>
         <a href="#"> Experiencia </a>
         <a href="Educacao.html"> Educação </a>
         <a href="#"> Contacto </a>
@@ -91,6 +91,36 @@
 
         
     </div>
+
+
+
+
+
+
+    <script>
+        function toggleMobileNav(){
+            const hamburger = document.querySelector('.hamburger');
+            const mobileNav = document.getElementById('mobileNav');
+
+            hamburger.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        }
+
+        document.addEventListener('click', function(event){
+            const mobileNav = document.getElementById('mobileNav');
+            const hamburger = document.querySelector('.hamburger');
+
+            if(mobileNav.classList.contains('active') &&
+               !mobileNav.contains(event.target) &&
+               !hamburger.contains(event.target)) {
+                toggleMobileNav();
+            }
+        });
+    </script>
+
+
     </section>
 </body>
 </html>
