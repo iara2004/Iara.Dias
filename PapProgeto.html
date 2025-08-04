@@ -9,7 +9,7 @@
         <div class="logo">Iara</div>
             <nav>
                 <a href="index.html"> Ínicio </a>
-                <a href="index.html"> Projetos </a>
+                <a href="Projetos.html"> Projetos </a>
                 <a href="#"> Experiencia </a>
                 <a href="Educacao.html"> Educação </a>
                 <a href="https://wa.me/351937375583?text=Olá%20Iara,%20gostava%20de%20falar%20contigo%20sobre%20uma%20oportunidade." class="contact-btn">Contacto</a>
@@ -23,9 +23,9 @@
 
     <div class="mobile-nav" id="mobileNav">
         <a href="index.html"> Ínicio </a>
-        <a href="index.html"> Projetos </a>
+        <a href="Projetos.html"> Projetos </a>
         <a href="#"> Experiencia </a>
-        <a href="#"> Educação </a>
+        <a href="Educacao.html"> Educação </a>
         <a href="#"> Contacto </a>
     </div>
 
@@ -49,10 +49,44 @@
             <h1>Processo de Desenvolvimento</h1>
             <h2>Como nasceu Forest Survival?</h2>
             <p>A ideia para o desenvolvimento do Forest Survival surgiu durante as aulas de Unity 3D, onde comecei a interessar-me cada vez mais por este tipo de jogos e por perceber como eram criados. Sempre fui fã de jogos de sobrevivência e, após assistir a vários vídeos e realizar alguma pesquisa, decidi inspirar-me num jogo que já conhecia bem: The Forest. Nesse jogo, o jogador sobrevive a um acidente de avião e precisa de lutar pela sua sobrevivência numa ilha cheia de perigos, incluindo canibais. Com base nessa inspiração, criei o conceito para Forest Survival, onde o jogador também se encontra isolado numa ilha, mas após um naufrágio, tendo de enfrentar perigos como a fome, a sede, a construção de abrigo e a presença de animais selvagens. O jogo ainda se encontra em desenvolvimento, mas já conta com os principais elementos de um verdadeiro desafio de sobrevivência.</p>
+
+            <h2> Plataformas e linguagens usadas:</h2>
         </div>
+            <div class="linguagens">
+        <div class="linguagem">
+            <img src="img/d1d1d.png" alt="Python">
+        </div>
+
+        <div class="linguagem">
+            <img src="img/unity.png" alt="C#">
+        </div>
+
+            </div>
+
     </section>
 
+    <script>
+        function toggleMobileNav(){
+            const hamburger = document.querySelector('.hamburger');
+            const mobileNav = document.getElementById('mobileNav');
 
+            hamburger.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        }
+
+        document.addEventListener('click', function(event){
+            const mobileNav = document.getElementById('mobileNav');
+            const hamburger = document.querySelector('.hamburger');
+
+            if(mobileNav.classList.contains('active') &&
+               !mobileNav.contains(event.target) &&
+               !hamburger.contains(event.target)) {
+                toggleMobileNav();
+            }
+        });
+    </script>
 
 </body>
 </html>
