@@ -277,6 +277,100 @@ h2 {
 
 
 
+.explicacao h2{
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+.explicacao p{
+    font-size: 20px;
+    padding: 0 30;
+}
+
+.imgInicio{
+    text-align: center;
+}
+
+.imgInicio img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 100%;
+    height: 550px;
+    width: 750px;
+}
+
+.explicacao ul {
+    list-style: none;
+    padding: 10 30px;
+    font-size: 25px;
+
+}
+
+.explicacao ul li {
+    padding-left: 30px;
+    position: relative;
+}
+
+.explicacao ul li:before {
+    content: "\2022";
+    color: #056f04;
+    font-size: 2.5em;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.imgCraft{
+    text-align: center;
+}
+
+.imgCraft img{
+    margin-bottom: 100px;
+    height: 400px;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+.Recursos {
+  max-width: 1000px;
+  margin: 0 30;
+}
+
+.recurso {
+  margin-bottom: 50px;
+}
+
+.conteudo {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.imgRecursos img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.texto {
+  flex: 1;
+  min-width: 200px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
 
 
 
