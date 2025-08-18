@@ -343,14 +343,14 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
-    .header { padding: 20px; }
-    .nav { display: none; }
+    header { padding: 20px; }
+    nav { display: none; }
+    .hamburger { display: flex; }
     .hero { padding: 100px 20px 50px; }
     .hero-text { margin-bottom: 40px; }
     .hero-image { width: 350px; }
     .buttons { flex-direction: column; gap: 15px; }
     .buttons a { width: 100%; }
-    .Contratar {flex-direction: column; text-align: center;}
 }
 
 @media (max-width: 480px) {
@@ -360,9 +360,7 @@ nav a:hover {
     .hero-text h2 { font-size: 24px; }
     .hero-text p { font-size: 16px; }
     .hero-image { width: 300px; }
-    .eu { display: none !important; }
-    .texto-contratar h1 { font-size: 32px; }
-    .texto-contratar p { font-size: 16px; }
-
 }
+
+
 
