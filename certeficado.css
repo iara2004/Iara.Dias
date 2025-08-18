@@ -118,7 +118,7 @@ nav a:hover {
 }
 
 .certificado-item {
-    display: flex;
+
     gap: 30px;
     padding: 50px;
     flex-wrap: wrap;
