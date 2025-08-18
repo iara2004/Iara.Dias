@@ -123,25 +123,28 @@ nav a:hover {
     align-items: center;   /* centraliza horizontalmente */
     justify-content: center;
     gap: 30px;
-    padding: 50px;
+    padding: 30px 20px;
     flex-wrap: wrap;
     text-align: center;    /* garante que o texto também fica centrado */
     margin: 0 auto;
+    width: 100%;          /* ocupa a largura toda */
+    max-width: 900px;
 }
 
 .certificado-item img {
-    max-width: 600px;
-    width: 100%;
+    width: 100%;          /* usa a largura disponível */
+    max-width: 500px;     /* imagens grandes mas legíveis */
     height: auto;
     border-radius: 8px;
-    display: block;        /* imagens são inline-block por padrão */
-    margin: 0 auto;        /* força centralização */
+    display: block;
+    margin: 0 auto;
 }
 
 .certificados-content {
-    max-width: 600px;
     width: 100%;
+    max-width: 800px;     /* deixa o texto ter linhas mais longas */
     text-align: center;
+    margin: 0 auto;
 }
 
 
@@ -169,32 +172,24 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
-    .certificado-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* centraliza conteúdo horizontalmente */
-    justify-content: center;
-    text-align: center;    /* centraliza o texto */
-    margin: 0 auto;
-    padding: 20px;
+    .certificado-item img {
     width: 100%;
+    max-width: 400px;
 }
-
-    .certificado-item img { 
-        width: 90%; 
-        max-width: 350px; 
-    }
 
     .certificados-content {
-    max-width: 600px;
-    width: 100%;
-    text-align: center;    /* garante que todo o texto fique centrado */
+     max-width: 90%;
 }
 
-    .certificados-content h2,
+    .certificados-content h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
     .certificados-content p {
-    text-align: center !important;
-}
+        font-size: 18px;
+        line-height: 1.6; /* melhora a leitura */
+    }
 
     .certificados-content h2 {
         font-size: 22px;
