@@ -154,6 +154,12 @@ button:hover {
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
+
+    .contact-container {
+        padding: 20px;
+        width: 2100%;
+    }
+
     nav {
         position: absolute;
         top: 70px;
@@ -179,7 +185,7 @@ button:hover {
 @media (max-width: 480px) {
     .contact-container {
         padding: 20px;
-        width: 200%;
+        width: 2100%;
     }
 
     header {
