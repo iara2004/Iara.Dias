@@ -2,6 +2,7 @@
 <head>
     <title>Site Pessoal</title>
     <link rel="stylesheet" href="certeficado.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>    
 <body>
     <header id="header">
@@ -12,19 +13,7 @@
                 <a href="Educacao.html"> Educação </a>
                 <a href="https://wa.me/351937375583?text=Olá%20Iara,%20gostava%20de%20falar%20contigo%20sobre%20uma%20oportunidade." class="contact-btn">Contacto</a>
             </nav>
-            <div class="hamburger" onClick="toggleMobileNav()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
     </header>
-
-    <div class="mobile-nav" id="mobileNav">
-        <a href="index.html"> Ínicio </a>
-        <a href="Projetos.html"> Projetos </a>
-        <a href="Educacao.html"> Educação </a>
-        <a href="#"> Contacto </a>
-    </div>
 
     <section class="Escola-Certificados">
         <div class="Descricao">
@@ -89,34 +78,6 @@
 
         
     </div>
-
-
-
-
-
-
-    <script>
-        function toggleMobileNav(){
-            const hamburger = document.querySelector('.hamburger');
-            const mobileNav = document.getElementById('mobileNav');
-
-            hamburger.classList.toggle('active');
-            mobileNav.classList.toggle('active');
-
-            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
-        }
-
-        document.addEventListener('click', function(event){
-            const mobileNav = document.getElementById('mobileNav');
-            const hamburger = document.querySelector('.hamburger');
-
-            if(mobileNav.classList.contains('active') &&
-               !mobileNav.contains(event.target) &&
-               !hamburger.contains(event.target)) {
-                toggleMobileNav();
-            }
-        });
-    </script>
 
 
     </section>
