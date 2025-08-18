@@ -8,6 +8,10 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  -webkit-text-size-adjust: 100%;
+}
+
 :root {
     --bg-light: #fdf6f0;          /* Fundo claro */
     --primary: #f7b7a3;           /* Rosa pêssego pastel */
