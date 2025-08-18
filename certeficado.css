@@ -164,23 +164,37 @@ nav a:hover {
         justify-content: center;
         text-align: center; 
         margin: 0 auto; 
-        padding: 0 15px;
+        padding: 20px;
+        width: 100%;           /* ocupa a tela toda */
+        max-width: 600px;      /* não fica gigante em tablets */
     }
 
     .certificado-item img { 
-        width: 80%; 
-        max-width: 300px; 
-        margin-bottom: 15px; 
+        width: 90%; 
+        max-width: 350px; 
+        margin-bottom: 20px; 
         display: block; 
         margin-left: auto; 
         margin-right: auto; 
+    }
+
+    .certificados-content {
+        width: 100%; 
+        max-width: 600px;
     }
 
     .certificados-content,
     .certificados-content h2,
     .certificados-content p {
         text-align: center !important;
+        font-size: 18px; /* mais legível no mobile */
     }
+
+    .certificados-content h2 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
 
     header { padding: 20px; }
     nav { display: none; }
