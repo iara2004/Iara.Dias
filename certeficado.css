@@ -118,10 +118,15 @@ nav a:hover {
 }
 
 .certificado-item {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* centraliza horizontalmente */
+    justify-content: center;
     gap: 30px;
     padding: 50px;
     flex-wrap: wrap;
+    text-align: center;    /* garante que o texto também fica centrado */
+    margin: 0 auto;
 }
 
 .certificado-item img {
@@ -129,6 +134,14 @@ nav a:hover {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    display: block;        /* imagens são inline-block por padrão */
+    margin: 0 auto;        /* força centralização */
+}
+
+.certificados-content {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
 }
 
 
