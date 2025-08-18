@@ -131,9 +131,7 @@ nav a:hover {
     border-radius: 8px;
 }
 
-.certificados-content {
-    flex: 1;
-}
+
 
 .certificados-content h2 {
     font-size: 25px;
@@ -171,8 +169,6 @@ nav a:hover {
     .certificado-item img { 
         width: 90%; 
         max-width: 350px; 
-        margin: 0 auto 20px auto;
-        display: block; 
     }
 
     .certificados-content {
