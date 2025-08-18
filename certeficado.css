@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 
-
 :root {
-    --bg-light:rgba(225, 255, 227, 0.645);         /* Fundo claro */
-    --primary: rgb(89, 163, 94);         /* Rosa pêssego pastel */
-    --accent: rgba(225, 255, 227, 0.645);           /* Tom rosado suave para detalhes */
-    --text-main: #201f1f;         /* Texto principal escuro */
+    --bg-light: rgba(225, 255, 227, 0.645);        
+    --primary: rgb(89, 163, 94);         
+    --accent: rgba(225, 255, 227, 0.645);           
+    --text-main: #201f1f;         
 }
 
 body {
@@ -92,38 +91,29 @@ nav a:hover {
     box-shadow: 0 5px 15px var(--shadow-primary);
 }
 
-
-
-
-
-
-
-
-
-.Escola-Certificados{
+.Escola-Certificados {
     min-height: 80vh;
     flex-wrap: wrap;
     padding: 200px 5% 50px;
     position: relative;
 }
 
-.Descricao h1{
+.Descricao h1 {
     margin-bottom: 25px;
     font-size: 48px;
     color: rgb(89, 163, 94);
     text-align: center;
 }
 
-.Descricao p{
+.Descricao p {
     text-align: center;
     font-size: 25px;
 }
 
-
-.certificados{
+.certificados {
     margin-top: 100px;
     font-size: 25px;
-    color:rgb(89, 163, 94);
+    color: rgb(89, 163, 94);
     text-align: center;
 }
 
@@ -139,7 +129,6 @@ nav a:hover {
     width: 100%;
     height: auto;
     border-radius: 8px;
-
 }
 
 .certificados-content {
@@ -159,39 +148,9 @@ nav a:hover {
     text-align: left;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* Animações */
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(0); }
-}
-
-@keyframes fadeInRight {
-    from { opacity: 0; transform: translateX(50px); }
-    to { opacity: 1; transform: translateX(0); }
-}
-
-@keyframes rubberBand {
-    from { transform: scale3d(1, 1, 1); }
-    30% { transform: scale3d(1.25, 0.75, 1); }
-    40% { transform: scale3d(0.75, 1.25, 1); }
-    50% { transform: scale3d(1.15, 0.85, 1); }
-    65% { transform: scale3d(0.95, 1.05, 1); }
-    75% { transform: scale3d(1.05, 0.95, 1); }
-    to   { transform: scale3d(1, 1, 1); }
-}
-
 /* Responsivo */
 @media (max-width: 1200px) {
-    .certificado-item {  width: 250px; }
+    .certificado-item { width: 250px; }
     .hero { padding-top: 120px; text-align: center; justify-content: center; }
     .hero-text { margin-bottom: 50px; }
     .social-icons, .buttons { justify-content: center; }
@@ -199,11 +158,30 @@ nav a:hover {
 }
 
 @media (max-width: 768px) {
-     .certificado-item { flex-direction: column; align-items: center; justify-content: center; text-align: center; margin: 0 auto; padding: 0 15px;}
-    .certificado-item img { width: 80%; max-width: 300px; margin-bottom: 15px; display: block; margin-left: auto; margin-right: auto;  }
-    .certificados-content { text-align: center !important; }
-    .certificados-content h2 { text-align: center !important; }
-    .certificados-content p { text-align: center !important; }
+    .certificado-item { 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+        text-align: center; 
+        margin: 0 auto; 
+        padding: 0 15px;
+    }
+
+    .certificado-item img { 
+        width: 80%; 
+        max-width: 300px; 
+        margin-bottom: 15px; 
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+    .certificados-content,
+    .certificados-content h2,
+    .certificados-content p {
+        text-align: center !important;
+    }
+
     header { padding: 20px; }
     nav { display: none; }
     .hero { padding: 100px 20px 50px; }
