@@ -12,19 +12,8 @@
                 <a href="Educacao.html"> Educação </a>
                 <a href="https://wa.me/351937375583?text=Olá%20Iara,%20gostava%20de%20falar%20contigo%20sobre%20uma%20oportunidade." class="contact-btn">Contacto</a>
             </nav>
-            <div class="hamburger" onClick="toggleMobileNav()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-    </header>
 
-    <div class="mobile-nav" id="mobileNav">
-        <a href="index.html"> Ínicio </a>
-        <a href="Projetos.html"> Projetos </a>
-        <a href="Educacao.html"> Educação </a>
-        <a href="https://wa.me/351937375583?text=Olá%20Iara,%20gostava%20de%20falar%20contigo%20sobre%20uma%20oportunidade."> Contacto </a>
-    </div>
+    </header>
 
     <section class="hero">
         <div class="hero-text">
@@ -47,15 +36,16 @@
     </section>
 
     <section class="Contratar">
-        <img src="img/Image1.jpg" class="eu">
-        <div class="texto-contratar">
-            <h1>Porque deveria me contratar?</h1>
-            <p class="razao">Sou uma jovem determinada, comunicativa e com grande capacidade de adaptação, que alia o gosto pela tecnologia à vontade constante de aprender e evoluir. Durante o meu percurso académico no curso de Gestão e Programação de Sistemas Informáticos, desenvolvi vários projetos práticos como o meu próprio jogo de sobrevivência em Unity 3D que demonstram os meus conhecimentos técnicos, criatividade e dedicação. Fui também trabalhadora-estudante, o que me ensinou a gerir bem o tempo, lidar com a pressão e manter o foco nos meus objetivos.
-
-Este site que apresento é também uma prova do meu empenho, sendo inteiramente desenvolvido por mim como uma forma de mostrar as minhas competências, desde o design até à programação, bem como a minha identidade enquanto futura profissional. Acredito que posso ser uma mais-valia para qualquer equipa, trazendo não só capacidades técnicas, mas também entusiasmo, proatividade e vontade de crescer dentro da empresa.</p>
-        </div>
+    <img src="img/Image1.jpg" class="eu">
+    <div class="texto-contratar">
+        <h1>Porque deveria me contratar?</h1>
+        <p class="razao">
+            Sou uma jovem determinada, comunicativa e com grande capacidade de adaptação, que alia o gosto pela tecnologia à vontade constante de aprender e evoluir. Durante o meu percurso académico no curso de Gestão e Programação de Sistemas Informáticos, desenvolvi vários projetos práticos como o meu próprio jogo de sobrevivência em Unity 3D que demonstram os meus conhecimentos técnicos, criatividade e dedicação. Fui também trabalhadora-estudante, o que me ensinou a gerir bem o tempo, lidar com a pressão e manter o foco nos meus objetivos.
+            <br><br>
+            Este site que apresento é também uma prova do meu empenho, sendo inteiramente desenvolvido por mim como uma forma de mostrar as minhas competências, desde o design até à programação, bem como a minha identidade enquanto futura profissional. Acredito que posso ser uma mais-valia para qualquer equipa, trazendo não só capacidades técnicas, mas também entusiasmo, proatividade e vontade de crescer dentro da empresa.
+        </p>
+    </div>
 </section>
-    
 
 
 
@@ -124,36 +114,6 @@ Este site que apresento é também uma prova do meu empenho, sendo inteiramente 
       <p><strong>1 website pessoal</strong><br> criado para mostrar tudo isso!</p>
   </div>
 </section>
-
-
-
-
-    <script>
-    function toggleMobileNav(){
-        const hamburger = document.querySelector('.hamburger');
-        const mobileNav = document.getElementById('mobileNav');
-
-        hamburger.classList.toggle('active');
-        mobileNav.classList.toggle('active');
-
-        if(mobileNav.classList.contains('active')){
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
-        }
-    }
-
-    document.addEventListener('click', function(event){
-        const mobileNav = document.getElementById('mobileNav');
-        const hamburger = document.querySelector('.hamburger');
-
-        if(mobileNav.classList.contains('active')){
-            if(!mobileNav.contains(event.target) && !hamburger.contains(event.target)){
-                toggleMobileNav();
-            }
-        }      
-    });
-</script>
 
 
 
