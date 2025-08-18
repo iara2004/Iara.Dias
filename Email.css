@@ -179,7 +179,7 @@ button:hover {
 @media (max-width: 480px) {
     .contact-container {
         padding: 20px;
-        width: 95%;
+        width: 200%;
     }
 
     header {
