@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-html, body {
-  -webkit-text-size-adjust: 100%;
-}
 
 :root {
     --bg-light:rgba(225, 255, 227, 0.645);         /* Fundo claro */
